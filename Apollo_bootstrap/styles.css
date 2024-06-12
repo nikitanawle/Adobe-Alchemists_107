@@ -1,0 +1,135 @@
+/*-----------------------Start of Nikita's CSS Styles ----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    background-color: #f8f9fa;
+    overflow: hidden; 
+    font-family: 'Inter', sans-serif; /* Apply the Inter font to the body */
+}
+
+.bg-brown {
+    background-color: #1f0d00;
+}
+
+.text-orange {
+    color: #ff7d1f ;
+}
+
+.stat {
+    margin-bottom: 1rem;
+}
+
+.stat p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.stat small {
+    font-size: 1rem;
+    display: block;
+}
+
+.custom-box {
+    margin: 5px; 
+    border-radius: 10px;
+}
+
+.small-box {
+    flex: 1; 
+    min-width: 300px;
+    max-width: 300px;
+    line-height: 40px;
+}
+
+.large-box {
+    flex: 1; 
+    min-width: 500px;
+    max-width: 500px; /* Set fixed width */
+    position: relative; /* Add this to make sure the footer is positioned relative to this box */
+}
+
+.custom-gap {
+    gap: 10px;
+}
+
+.scroll-container-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the container */
+}
+
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap; 
+    width: auto; /* Adjust width to fit 3 boxes within screen */
+    animation: scroll-left 30s linear infinite;
+}
+
+.scroll-container-wrapper:hover .scroll-container {
+    animation-play-state: paused; /* Pause the animation on hover */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
+.footer-custom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 38px; 
+}
+
+.footer-custom img {
+    flex-shrink: 0;
+}
+
+.footer-custom div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-custom::before {
+    content: none; 
+}
+
+.footer-custom img {
+    border: none;
+}
+
+.footer-custom {
+    border-left: none;
+    padding-left: 10px;
+}
+
+.footer-custom .name,
+.footer-custom .position {
+    margin: 0; 
+    padding: 5px; 
+}
+
+.bg-dark-red {
+    background-color: #350810;
+}
+
+.text-light-pink {
+    color: #d14c66   ;
+}
+
+.bg-dark-green {
+    background-color: #090d01;
+}
+
+.text-light-green {
+    color: #99d517;
+}
+/*-----------------------End of Nikita's CSS Styles ----------------------- */
