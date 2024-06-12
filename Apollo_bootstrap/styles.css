@@ -1,15 +1,43 @@
-/*-----------------------------Start of Hiren's CSS Styles ----------------------------- */
+/*-----------------------------Start of Hiren CSS Styles -------------------------------- */
 
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Body Styles */
 body {
     background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+    overflow-y: auto; /* Allows vertical scrolling */
+    margin: 0;
+    padding: 0;
 }
 
+/*-----------------------------Start of Hiren CSS Styles ----------------------------- */
+/* Header and Navigation */
+header {
+    background-color: #fdf2e9;
+    height: 80vh;
+}
+
+.hero-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+/*-----------------------------End of Hiren CSS Styles -------------------------------- */
+
+/*-----------------------------Start of Nikita CSS Styles ----------------------------- */
+/* General Box Styles */
 .bg-brown {
-    background-color: #3b2f2f !important;
+    background-color: #1f0d00;
 }
 
 .text-orange {
-    color: #ff7f0e !important;
+    color: #ff7d1f;
 }
 
 .stat {
@@ -37,124 +65,81 @@ body {
     gap: 10px;
 }
 
-
-
-.container1{
+/* Container Styles */
+.container1 {
     max-width: 1340px;
     margin: auto;
 }
-header {
-       background-color: #fdf2e9;
-       height: 80vh;
-   }
-   .hero-section {
-       padding: 50px 0;
-       text-align: center;
-   }
-   nav {
-    position: sticky;
-    top: 0px;
-   }
-/*-----------------------------End of Hiren's CSS Styles ----------------------------- */
 
-/*----------------------------Start of Nikita's CSS Styles --------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-body {
-    background-color: #f8f9fa;
-    overflow: hidden; 
-    font-family: 'Inter', sans-serif; /* Apply the Inter font to the body */
-}
-
-.bg-brown {
-    background-color: #1f0d00;
-}
-
-.text-orange {
-    color: #ff7d1f ;
-}
-
-.stat {
-    margin-bottom: 1rem;
-}
-
-.stat p {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.stat small {
-    font-size: 1rem;
-    display: block;
-}
-
-.custom-box {
-    margin: 5px; 
-    border-radius: 10px;
-}
-
+/* Box Sizes */
 .small-box {
-    flex: 1; 
+    flex: 1;
     min-width: 300px;
     max-width: 300px;
     line-height: 40px;
 }
 
 .large-box {
-    flex: 1; 
+    flex: 1;
     min-width: 500px;
-    max-width: 500px; /* Set fixed width */
-    position: relative; /* Add this to make sure the footer is positioned relative to this box */
+    max-width: 500px;
+    position: relative;
 }
 
-.custom-gap {
-    gap: 10px;
-}
-
+/* Scroll Container Styles */
 .scroll-container-wrapper {
     width: 100%;
-    overflow: hidden;
+    overflow-x: auto; /* Allows horizontal scrolling */
     display: flex;
-    justify-content: center; /* Center the container */
+    justify-content: center;
 }
 
 .scroll-container {
     display: flex;
-    flex-wrap: nowrap; 
-    width: auto; /* Adjust width to fit 3 boxes within screen */
+    flex-wrap: nowrap;
+    width: auto;
     animation: scroll-left 30s linear infinite;
 }
 
 .scroll-container-wrapper:hover .scroll-container {
-    animation-play-state: paused; /* Pause the animation on hover */
+    animation-play-state: paused;
 }
 
+/* Keyframes for Scroll Animation */
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
     }
 }
 
+/* Footer Styles */
 .footer-custom {
     display: flex;
     align-items: center;
     gap: 10px;
     position: absolute;
     bottom: 10px;
-    left: 38px; 
+    left: 38px;
 }
 
 .footer-custom img {
     flex-shrink: 0;
+    border: none;
 }
 
 .footer-custom div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.footer-custom .name,
+.footer-custom .position {
+    margin: 0;
+    padding: 5px;
 }
 
 .footer-custom::before {
@@ -170,18 +155,14 @@ body {
     padding-left: 10px;
 }
 
-.footer-custom .name,
-.footer-custom .position {
-    margin: 0; 
-    padding: 5px; 
-}
 
+/* Background Colors */
 .bg-dark-red {
     background-color: #350810;
 }
 
 .text-light-pink {
-    color: #d14c66   ;
+    color: #d14c66;
 }
 
 .bg-dark-green {
@@ -191,4 +172,4 @@ body {
 .text-light-green {
     color: #99d517;
 }
-/*-----------------------End of Nikita's CSS Styles ----------------------- */
+/*-----------------------------End of Nikita CSS Styles ----------------------------- */
