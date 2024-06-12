@@ -65,6 +65,7 @@ nav {
     gap: 10px;
 }
 
+
 /* Container Styles */
 .container1 {
     max-width: 1340px;
@@ -173,3 +174,23 @@ nav {
     color: #99d517;
 }
 /*-----------------------------End of Nikita CSS Styles ----------------------------- */
+=======
+
+
+.container1{
+    max-width: 1340px;
+    margin: auto;
+}
+header {
+       background-color: #fdf2e9;
+       height: 80vh;
+   }
+   .hero-section {
+       padding: 50px 0;
+       text-align: center;
+   }
+   nav {
+    position: sticky;
+    top: 0px;
+   }
+
