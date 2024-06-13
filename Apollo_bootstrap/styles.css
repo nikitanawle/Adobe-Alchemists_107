@@ -12,7 +12,6 @@ body {
     padding: 0;
 }
 
-/*-----------------------------Start of Hiren CSS Styles ----------------------------- */
 /* Header and Navigation */
 header {
     background-color: #fdf2e9;
@@ -28,10 +27,17 @@ nav {
     position: sticky;
     top: 0px;
 }
-/*-----------------------------End of Hiren CSS Styles -------------------------------- */
 
-/*-----------------------------Start of Nikita CSS Styles ----------------------------- */
 /* General Box Styles */
+.apollo-section {
+    background-color: #f7f2e9;
+    padding: 50px 0;
+}
+.apollo-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+}
 .bg-brown {
     background-color: #1f0d00;
 }
@@ -55,16 +61,15 @@ nav {
 }
 
 .custom-box {
-    margin: 5px; /* Adjusts spacing between boxes, resulting in 10px gap */
-    flex: 1; /* Allows the boxes to take equal space */
-    min-width: 300px; /* Adjust as needed */
+    margin: 5px; 
+    flex: 1; 
+    min-width: 300px;
     border-radius: 20px;
 }
 
 .custom-gap {
     gap: 10px;
 }
-
 
 /* Container Styles */
 .container1 {
@@ -90,7 +95,6 @@ nav {
 /* Scroll Container Styles */
 .scroll-container-wrapper {
     width: 100%;
-    overflow-x: auto; /* Allows horizontal scrolling */
     display: flex;
     justify-content: center;
 }
@@ -156,7 +160,6 @@ nav {
     padding-left: 10px;
 }
 
-
 /* Background Colors */
 .bg-dark-red {
     background-color: #350810;
@@ -173,31 +176,19 @@ nav {
 .text-light-green {
     color: #99d517;
 }
-/*-----------------------------End of Nikita CSS Styles ----------------------------- */
-=======
 
-
-.container1{
-    max-width: 1340px;
-    margin: auto;
+#apollo-button {
+    background-color: black;
+    width: 300px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
 }
-header {
-       background-color: #fdf2e9;
-       height: 80vh;
-   }
-   .hero-section {
-       padding: 50px 0;
-       text-align: center;
-   }
-   nav {
-    position: sticky;
-    top: 0px;
-   }
 
+/*-----------------------------End of Nikita CSS Styles ----------------------------- */
 
-
-   
-
+/* Footer Styles */
 footer {
     background-color: white;
     padding: 20px 0;
@@ -211,13 +202,11 @@ footer {
     max-width: 1350px;
     margin: auto;
     padding: 30px;
-    
 }
 
 .left img {
-   width: 150px;
-   margin-left: -15px;
-  
+    width: 150px;
+    margin-left: -15px;
 }
 
 .linked {
@@ -280,19 +269,19 @@ button {
     background-color: white;
     font-weight: 600;
     cursor: pointer;
-    width: 200px;
+    width: 300px;
 }
 
 button:hover {
     background-color: rgba(249, 236, 238, 0.681);
 }
-.last{
+
+.last {
     display: flex;
-    
     justify-content: end;
     margin: auto;
-   padding: 10px;
-   gap: 25px;
+    padding: 10px;
+    gap: 25px;
     max-width: 1350px;
     border-top: 1px solid gray;
 }
@@ -302,16 +291,13 @@ button:hover {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-
-  
 }
+
 @media (max-width: 900px) {
     .footer-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-  
 }
 
 @media (max-width: 600px) {
@@ -320,17 +306,13 @@ button:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-   
-}
-@media (max-width: 600px) {
     .last {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .logo-social-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
-   
 }
