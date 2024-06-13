@@ -7,68 +7,186 @@
         
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!------------------------------------------------ Start of Hiren Code------------------------------------------------>
 <header class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light container1">
-        <a class="navbar-brand" href="#">
-            <img src="asset/Apollo.jpg" width="130" height="70" alt="Logo"> 
-        </a>
+        <nav class="navbar navbar-expand-lg navbar-light container1">
+            <a class="navbar-brand" href="#">
+                <img src="./asset/Apollo.jpg" width="80" height="70" alt="Logo"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownPlatform" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPlatform">
+                            <a class="dropdown-item" href="#">BUILD PIPELINE</a>
+                            <a class="dropdown-item" href="#">CLOSE DEALS</a>
+                            <a class="dropdown-item" href="#">IMPROVE PERFORMANCE</a>
+                            <a class="dropdown-item" href="#">STREAMLINE OPERATIONS</a>
+                            <a class="dropdown-item" href="#">APOLLO PLATFORM</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownTeams" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Teams
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownTeams">
+                            <a class="dropdown-item" href="#">SALES LEADER</a>
+                            <a class="dropdown-item" href="#">FOUNDER</a>
+                            <a class="dropdown-item" href="#">SALES DEVELOPMENT</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownResources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
+                            <a class="dropdown-item" href="#">LEARN</a>
+                            <a class="dropdown-item" href="#">CUSTOMERS</a>
+                            <a class="dropdown-item" href="#">PARTNERS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-lg-flex">
+                        <a class="nav-link text-dark" href="#">Get a demo</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex">
+                        <a class="btn btn-outline-primary mr-2" href="#">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark" href="#">Sign up for free</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto d-none d-lg-flex">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownTeams" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Platform
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPlatform">
-                        <a class="dropdown-item" href="#">BUILD PIPELINE</a>
-                        <a class="dropdown-item" href="#">CLOSE DEALS</a>
-                        <a class="dropdown-item" href="#">IMPROVE PERFORMANCE</a>
-                        <a class="dropdown-item" href="#">STREAMLINE OPERATIONS</a>
-                        <a class="dropdown-item" href="#">APOLLO PLATFORM</a>
+        <section class="d-lg-flex container1">
+            <div class="container hero-section">
+                <h1>Find and close your next deal</h1>
+                <p>Power your go-to-market with one platform. Fueled by the most accurate data on 275M contacts and 73M companies.</p>
+                <button class="btn btn-warning">Sign up for free</button>
+                <button class="btn btn-outline-dark">Get a demo</button>
+                <p class="mt-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 4.8/5 based on 6,904 reviews | GDPR Compliant</p>
+            </div>
+        
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 bg-light d-none d-md-block">
+                        <ul class="nav flex-column">
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-user"></i>
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <a class="nav-link" href="#">Search</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-server"></i>
+                                <a class="nav-link" href="#">Data Enrichment</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-brands fa-telegram"></i>
+                                <a class="nav-link" href="#">Sequences</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a class="nav-link" href="#">Emails</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-phone"></i>
+                                <a class="nav-link" href="#">Calls</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-handshake"></i>
+                                <a class="nav-link" href="#">Meetings</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-list-check"></i>
+                                <a class="nav-link" href="#">Tasks</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <a class="nav-link" href="#">Deals</a>
+                            </li>
+                            <li class="nav-item ani-icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <a class="nav-link" href="#">Analytics</a>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownTeams1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Teams
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownTeams">
-                        <a class="dropdown-item" href="#">SALES LEADER</a>
-                        <a class="dropdown-item" href="#">FOUNDER</a>
-                        <a class="dropdown-item" href="#">SALES DEVELOPMENT</a>
+                    <div class="col-md-10 bg-light">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card card-custom animation-1">
+                                    <div class="card-body card-body-custom text-center">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76rlWgeZA1JQ7omOcsscMV2HSnxSnddo9FA&s" alt="User 1" class="img-fluid rounded-circle mb-2" width="60" height="60">
+                                        <h5>Alissa Jones</h5>
+                                        <p>VP of Sales @Dropbox<br>San Francisco, California</p>
+                                        <button class="btn btn-primary rounded w-100"><i class="fas fa-plus"></i> Add to sequence</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card card-custom animation-2">
+                                    <div class="card-body card-body-custom">
+                                        <h5>AI email assistant</h5>
+                                        <p>Hi Alissa, glad to connect. Looks like you’re growing the account management team quite a bit right now.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                                <div class="card card-custom animation-3">
+                                    <div class="card-body card-body-custom">
+                                        <h5>Dropbox Meeting</h5>
+                                        <p>The purpose of the call was to understand pricing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card card-custom animation-4">
+                                    <div class="card-body card-body-custom">
+                                        <h5>Apollo conversations</h5>
+                                        <p>Apollo conversations recorded and analyzed a meeting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownResources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Resources
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-                        <a class="dropdown-item" href="#">LEARN</a>
-                        <a class="dropdown-item" href="#">CUSTOMERS</a>
-                        <a class="dropdown-item" href="#">PARTNERS</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Pricing</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item d-none d-lg-flex">
-                    <a class="nav-link text-dark" href="#">Get a demo</a>
-                </li>
-                <li class="nav-item d-none d-lg-flex">
-                    <a class="btn btn-outline-primary mr-2" href="#">Log in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-dark" href="#">Sign up for free</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+                </div>
+            </div>
+        </section>
+        </header>
+        
+        <section class="container1 bg-info py-4">
+            <div class="text-center">
+                <p>Millions of sellers at over 500,000 companies beat their number with Apollo</p>
+            </div>
+            <div class="logo-bar d-flex justify-content-around align-items-center flex-wrap">
+                <div class="logo-item">Stripe</div>
+                <div class="logo-item">Census</div>
+                <div class="logo-item">Customer.io</div>
+                <div class="logo-item">DocuSign</div>
+                <div class="logo-item">Autodesk</div>
+                <div class="logo-item">Company</div>
+            </div>
+        </section>
+        
 <!------------------------------------------------ End of Hiren Code--------------------------------------------------->
 
 
