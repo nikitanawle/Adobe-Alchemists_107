@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
@@ -308,7 +315,7 @@ nav {
             background-color: white;
             font-weight: 600;
             cursor: pointer;
-            width: 300px;
+            width: 250px;
         }
         
         button:hover {
@@ -338,3 +345,4 @@ nav {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
