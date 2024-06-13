@@ -12,7 +12,6 @@ body {
     padding: 0;
 }
 
-/*-----------------------------Start of Hiren CSS Styles ----------------------------- */
 /* Header and Navigation */
 header {
     background-color: #fdf2e9;
@@ -28,10 +27,8 @@ nav {
     position: sticky;
     top: 0px;
 }
-/*-----------------------------End of Hiren CSS Styles -------------------------------- */
 
 /* General Box Styles */
-
 .apollo-section {
     background-color: #f7f2e9;
     padding: 50px 0;
@@ -64,16 +61,15 @@ nav {
 }
 
 .custom-box {
-    margin: 5px; /* Adjusts spacing between boxes, resulting in 10px gap */
-    flex: 1; /* Allows the boxes to take equal space */
-    min-width: 300px; /* Adjust as needed */
+    margin: 5px; 
+    flex: 1; 
+    min-width: 300px;
     border-radius: 20px;
 }
 
 .custom-gap {
     gap: 10px;
 }
-
 
 /* Container Styles */
 .container1 {
@@ -164,7 +160,6 @@ nav {
     padding-left: 10px;
 }
 
-
 /* Background Colors */
 .bg-dark-red {
     background-color: #350810;
@@ -190,13 +185,11 @@ nav {
     border-radius: 10px;
     border: none;
 }
+
 /*-----------------------------End of Nikita CSS Styles ----------------------------- */
 
-
-
-   
-
-web_footer {
+/* Footer Styles */
+footer {
     background-color: white;
     padding: 20px 0;
 }
@@ -209,13 +202,11 @@ web_footer {
     max-width: 1350px;
     margin: auto;
     padding: 30px;
-    
 }
 
 .left img {
-   width: 150px;
-   margin-left: -15px;
-  
+    width: 150px;
+    margin-left: -15px;
 }
 
 .linked {
@@ -284,13 +275,13 @@ button {
 button:hover {
     background-color: rgba(249, 236, 238, 0.681);
 }
-.last{
+
+.last {
     display: flex;
-    
     justify-content: end;
     margin: auto;
-   padding: 10px;
-   gap: 25px;
+    padding: 10px;
+    gap: 25px;
     max-width: 1350px;
     border-top: 1px solid gray;
 }
@@ -300,16 +291,13 @@ button:hover {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-
-  
 }
+
 @media (max-width: 900px) {
     .footer-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-  
 }
 
 @media (max-width: 600px) {
@@ -318,17 +306,13 @@ button:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-   
-}
-@media (max-width: 600px) {
     .last {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .logo-social-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
-   
 }
