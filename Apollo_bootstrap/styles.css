@@ -30,8 +30,17 @@ nav {
 }
 /*-----------------------------End of Hiren CSS Styles -------------------------------- */
 
-/*-----------------------------Start of Nikita CSS Styles ----------------------------- */
 /* General Box Styles */
+
+.apollo-section {
+    background-color: #f7f2e9;
+    padding: 50px 0;
+}
+.apollo-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+}
 .bg-brown {
     background-color: #1f0d00;
 }
@@ -90,7 +99,6 @@ nav {
 /* Scroll Container Styles */
 .scroll-container-wrapper {
     width: 100%;
-    overflow-x: auto; /* Allows horizontal scrolling */
     display: flex;
     justify-content: center;
 }
@@ -173,24 +181,154 @@ nav {
 .text-light-green {
     color: #99d517;
 }
-/*-----------------------------End of Nikita CSS Styles ----------------------------- */
-=======
 
-
-.container1{
-    max-width: 1340px;
-    margin: auto;
+#apollo-button {
+    background-color: black;
+    width: 300px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
 }
-header {
-       background-color: #fdf2e9;
-       height: 80vh;
-   }
-   .hero-section {
-       padding: 50px 0;
-       text-align: center;
-   }
-   nav {
-    position: sticky;
-    top: 0px;
-   }
+/*-----------------------------End of Nikita CSS Styles ----------------------------- */
 
+
+
+   
+
+web_footer {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.logo-social-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin: auto;
+    padding: 30px;
+    
+}
+
+.left img {
+   width: 150px;
+   margin-left: -15px;
+  
+}
+
+.linked {
+    width: 33px;
+    height: 33px;
+}
+
+.right {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 160px;
+    line-height: 2;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline yellow 3px;
+}
+
+.prospect {
+    flex: 1;
+    max-width: 220px;
+}
+
+button {
+    border: 3px solid yellow;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: 300px;
+}
+
+button:hover {
+    background-color: rgba(249, 236, 238, 0.681);
+}
+.last{
+    display: flex;
+    
+    justify-content: end;
+    margin: auto;
+   padding: 10px;
+   gap: 25px;
+    max-width: 1350px;
+    border-top: 1px solid gray;
+}
+
+@media (max-width: 1200px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+  
+}
+@media (max-width: 900px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+   
+}
+@media (max-width: 600px) {
+    .last {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo-social-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+   
+}
