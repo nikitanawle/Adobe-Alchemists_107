@@ -1,5 +1,3 @@
-/*-----------------------------Start of Hiren CSS Styles -------------------------------- */
-
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
@@ -27,292 +25,277 @@ nav {
     position: sticky;
     top: 0px;
 }
+        /* General Box Styles */
+        .apollo-section {
+            background-color: #f7f2e9;
+            padding: 50px 0;
+        }
+        .apollo-text {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #000;
+        }
+        .bg-brown {
+            background-color: #1f0d00;
+        }
+        
+        .text-orange {
+            color: #ff7d1f;
+        }
+        
+        .stat {
+            margin-bottom: 1rem;
+        }
+        
+        .stat p {
+            font-size: 2rem;
+            margin: 0;
+        }
+        
+        .stat small {
+            font-size: 1rem;
+            display: block;
+        }
+        
+        .custom-box {
+            margin: 5px; 
+            flex: 1; 
+            min-width: 300px;
+            border-radius: 20px;
+        }
+        
+        .custom-gap {
+            gap: 10px;
+        }
+        
+        /* Container Styles */
+        .container1 {
+            max-width: 1340px;
+            margin: auto;
+        }
+        
+        /* Box Sizes */
+        .small-box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 300px;
+            line-height: 40px;
+        }
+        
+        .large-box {
+            flex: 1;
+            min-width: 500px;
+            max-width: 500px;
+            position: relative;
+        }
+        
+        /* Scroll Container Styles */
+        .scroll-container-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .scroll-container {
+            display: flex;
+            flex-wrap: nowrap;
+            width: auto;
+            animation: scroll-left 30s linear infinite;
+        }
+        
+        .scroll-container-wrapper:hover .scroll-container {
+            animation-play-state: paused;
+        }
+        
+        /* Keyframes for Scroll Animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Footer Styles */
+        .footer-custom {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        
+        .footer-custom img {
+            flex-shrink: 0;
+            border: none;
+        }
+        
+        .footer-custom .footer-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        
+        .footer-custom .name,
+        .footer-custom .position {
+            margin: 0;
+            line-height: 5px;
+        }
+        
+        .footer-custom::before {
+            content: none; 
+        }
+        
+        .footer-custom img {
+            border: none;
+        }
+        
+        .footer-custom {
+            border-left: none;
+            padding-left: 10px;
+        }
+        
+        .footer-text {
+            text-align: start;
+        }
+        
+        /* Background Colors */
+        .bg-dark-red {
+            background-color: #350810;
+        }
+        
+        .text-light-pink {
+            color: #d14c66;
+        }
+        
+        .bg-dark-green {
+            background-color: #090d01;
+        }
+        
+        .text-light-green {
+            color: #99d517;
+        }
+        
+        #apollo-button {
+            background-color: black;
+            width: 300px;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        
+        /*-----------------------------End of Nikita CSS Styles ----------------------------- */
 
-/* General Box Styles */
-.apollo-section {
-    background-color: #f7f2e9;
-    padding: 50px 0;
-}
-.apollo-text {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #000;
-}
-.bg-brown {
-    background-color: #1f0d00;
-}
-
-.text-orange {
-    color: #ff7d1f;
-}
-
-.stat {
-    margin-bottom: 1rem;
-}
-
-.stat p {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.stat small {
-    font-size: 1rem;
-    display: block;
-}
-
-.custom-box {
-    margin: 5px; 
-    flex: 1; 
-    min-width: 300px;
-    border-radius: 20px;
-}
-
-.custom-gap {
-    gap: 10px;
-}
-
-/* Container Styles */
-.container1 {
-    max-width: 1340px;
-    margin: auto;
-}
-
-/* Box Sizes */
-.small-box {
-    flex: 1;
-    min-width: 300px;
-    max-width: 300px;
-    line-height: 40px;
-}
-
-.large-box {
-    flex: 1;
-    min-width: 500px;
-    max-width: 500px;
-    position: relative;
-}
-
-/* Scroll Container Styles */
-.scroll-container-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.scroll-container {
-    display: flex;
-    flex-wrap: nowrap;
-    width: auto;
-    animation: scroll-left 30s linear infinite;
-}
-
-.scroll-container-wrapper:hover .scroll-container {
-    animation-play-state: paused;
-}
-
-/* Keyframes for Scroll Animation */
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-/* Footer Styles */
-.footer-custom {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 38px;
-}
-
-.footer-custom img {
-    flex-shrink: 0;
-    border: none;
-}
-
-.footer-custom div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer-custom .name,
-.footer-custom .position {
-    margin: 0;
-    padding: 5px;
-}
-
-.footer-custom::before {
-    content: none; 
-}
-
-.footer-custom img {
-    border: none;
-}
-
-.footer-custom {
-    border-left: none;
-    padding-left: 10px;
-}
-
-/* Background Colors */
-.bg-dark-red {
-    background-color: #350810;
-}
-
-.text-light-pink {
-    color: #d14c66;
-}
-
-.bg-dark-green {
-    background-color: #090d01;
-}
-
-.text-light-green {
-    color: #99d517;
-}
-
-#apollo-button {
-    background-color: black;
-    width: 300px;
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-}
-
-/*-----------------------------End of Nikita CSS Styles ----------------------------- */
-
-/* Footer Styles */
-footer {
-    background-color: white;
-    padding: 20px 0;
-}
-
-.logo-social-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1350px;
-    margin: auto;
-    padding: 30px;
-}
-
-.left img {
-    width: 150px;
-    margin-left: -15px;
-}
-
-.linked {
-    width: 33px;
-    height: 33px;
-}
-
-.right {
-    display: flex;
-    gap: 24px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1350px;
-    margin: 0 auto;
-}
-
-.footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 160px;
-    line-height: 2;
-}
-
-.footer-section h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 5px;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline yellow 3px;
-}
-
-.prospect {
-    flex: 1;
-    max-width: 220px;
-}
-
-button {
-    border: 3px solid yellow;
-    padding: 12px;
-    border-radius: 10px;
-    background-color: white;
-    font-weight: 600;
-    cursor: pointer;
-    width: 300px;
-}
-
-button:hover {
-    background-color: rgba(249, 236, 238, 0.681);
-}
-
-.last {
-    display: flex;
-    justify-content: end;
-    margin: auto;
-    padding: 10px;
-    gap: 25px;
-    max-width: 1350px;
-    border-top: 1px solid gray;
-}
-
-@media (max-width: 1200px) {
-    .footer-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .footer-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .footer-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .last {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .logo-social-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
+        .web_footer {
+            background-color: white;
+            padding: 20px 0;
+        }
+        
+        .logo-social-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1350px;
+            margin: auto;
+            padding: 30px;
+        }
+        
+        .left img {
+            width: 150px;
+            margin-left: -15px;
+        }
+        
+        .linked {
+            width: 33px;
+            height: 33px;
+        }
+        
+        .right {
+            display: flex;
+            gap: 24px;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1350px;
+            margin: 0 auto;
+        }
+        
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+            min-width: 160px;
+            line-height: 2;
+        }
+        
+        .footer-section h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+        
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .footer-section ul li a:hover {
+            text-decoration: underline yellow 3px;
+        }
+        
+        .prospect {
+            flex: 1;
+            max-width: 220px;
+        }
+        
+        button {
+            border: 3px solid yellow;
+            padding: 12px;
+            border-radius: 10px;
+            background-color: white;
+            font-weight: 600;
+            cursor: pointer;
+            width: 300px;
+        }
+        
+        button:hover {
+            background-color: rgba(249, 236, 238, 0.681);
+        }
+        
+        .last {
+            display: flex;
+            justify-content: end;
+            margin: auto;
+            padding: 10px;
+            gap: 25px;
+            max-width: 1350px;
+            border-top: 1px solid gray;
+        }
+        
+        @media (max-width: 1200px) {
+            .footer-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .footer-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
