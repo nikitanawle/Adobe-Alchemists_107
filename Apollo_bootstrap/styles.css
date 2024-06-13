@@ -269,7 +269,7 @@ nav {
             background-color: white;
             font-weight: 600;
             cursor: pointer;
-            width: 300px;
+            width: 250px;
         }
         
         button:hover {
@@ -299,3 +299,5 @@ nav {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+        
