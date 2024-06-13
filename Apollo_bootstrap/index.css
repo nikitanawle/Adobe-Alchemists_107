@@ -1,0 +1,198 @@
+
+
+
+.main-section {
+    background-image: url('https://netlify.apollo.io/_next/static/media/bottom-cta-bg.f7464d41.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    /* margin-bottom: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-handle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 7px;
+}
+.sign-handle>span{
+    margin-top: 3px;
+   
+}
+.meeting{
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.directories-section {
+    background-color: #19160f;
+    color: white;
+    padding: 1rem 0;
+    height: 250px;
+  
+}
+
+.directories-section a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.people-1{
+    border-top: 1px solid rgb(239, 199, 199);
+    width: 1350px;
+    cursor: pointer;
+    
+    
+}
+.browse{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+@media (max-width: 700px) {
+    .sign-handle {
+        width:250px; 
+    }
+    
+    .meeting {
+       font-size: 30px;
+       font-family: 400px;
+       margin: auto;
+      
+    }
+}
+
+
+footer {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.logo-social-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin: auto;
+    padding: 30px;
+    
+}
+
+.left img {
+   width: 150px;
+  
+}
+
+.linked {
+    width: 33px;
+    height: 33px;
+}
+
+.right {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 160px;
+    line-height: 2;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline yellow 3px;
+}
+
+.prospect {
+    flex: 1;
+    max-width: 220px;
+}
+
+button {
+    border: 3px solid yellow;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(249, 236, 238, 0.681);
+}
+.last{
+    display: flex;
+    
+    justify-content: end;
+    margin: auto;
+   padding: 10px;
+   gap: 25px;
+    max-width: 1350px;
+    border-top: 1px solid gray;
+}
+
+@media (max-width: 1200px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+  
+}
+@media (max-width: 900px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+   
+}
+@media (max-width: 600px) {
+    .last {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+   
+}
