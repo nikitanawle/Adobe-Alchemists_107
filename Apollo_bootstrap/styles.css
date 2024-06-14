@@ -365,6 +365,7 @@ nav {
 
 .left img {
    width: 150px;
+   margin-left: -20px;
   
 }
 
@@ -394,8 +395,9 @@ nav {
 }
 
 .footer-section h4 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .footer-section ul {
@@ -421,13 +423,16 @@ nav {
     max-width: 220px;
 }
 
-button {
+.improve {
     border: 3px solid yellow;
-    padding: 12px;
+    padding: 6px;
     border-radius: 10px;
     background-color: white;
     font-weight: 600;
     cursor: pointer;
+    width: 200px;
+    font-size: 12px;
+    
 }
 
 button:hover {
