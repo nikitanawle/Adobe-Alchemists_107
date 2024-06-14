@@ -527,3 +527,109 @@ button:hover {
         opacity: 0;
     }
 }
+body {
+    font-size: 0.875rem;
+  }
+  
+  .sidebar {
+    /* position: fixed; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    /* padding: 48px 0 0; */
+    /* background-color: #f8f9fa; */
+  }
+  .container-fluid {
+    margin: 0 100px;
+  }
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    /* height: calc(100vh - 48px); */
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .nav-link .fas {
+    margin-right: 4px;
+    color: #999;
+  }
+  
+  .nav-link.active {
+    color: #007bff;
+  }
+  
+  .nav-link:hover .fas,
+  .nav-link.active .fas {
+    color: inherit;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #007bff;
+    background-color: #ecf2f8;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+  }
+  
+  .sidebar .nav-link:hover {
+    color: #0056b3;
+    background-color: #ecf2f8;
+    border-radius: 10px;
+  }
+  
+  .section-title {
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    /* margin-left: 16.66667%; */
+  }
+  
+  .header {
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef;
+    margin: 0 350px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .search-bar {
+    padding: 20px 0;
+    background-color: #ecf2f8;
+    border-radius: 10px 10px 0 0px;
+  }
+  
+  .content-area {
+    height: 600px;
+    width: 100%;
+    background-color: #007bff;
+    /* background-image: url("https://netlify.apollo.io/_next/image?url=https%3A%2F%2Fnetlify.apollo.io%2F_next%2Fstatic%2Fmedia%2Fcontact-account-search.79b0a060.png&w=2048&q=75"); */
+    /* margin-top: 20px; */
+    /* border-radius: 5px; */
+  }
+  .content-area > img {
+    height: 600px;
+  }
+  .input-group-prepend {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 100%;
+    /* background-color: #cbdae9; */
+  }
