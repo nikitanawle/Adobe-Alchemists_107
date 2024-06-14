@@ -158,7 +158,10 @@ header {
         transform: translateX(0); 
     }
 }
-
+.header-ani {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
 /* General Box Styles */
