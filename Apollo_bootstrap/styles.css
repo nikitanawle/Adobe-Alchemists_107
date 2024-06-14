@@ -5,6 +5,7 @@ Body Styles*/
  body {
     background-color: #f8f9fa;
     font-family: 'Inter', sans-serif;
+
     overflow-y: auto; 
     margin: 0;
     padding: 0;
@@ -30,9 +31,18 @@ Body Styles*/
 
 
 header {
+
     
     
     padding: 30px 0; 
+
+    background-color: #fdf2e9;
+    background-image: url(https://netlify.apollo.io/_next/static/media/bg.20d8f1eb.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
 }
 .content-background-image{
     background-image: url('https://netlify.apollo.io/_next/static/media/bottom-cta-bg.f7464d41.svg');
