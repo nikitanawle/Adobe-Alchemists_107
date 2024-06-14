@@ -1,99 +1,155 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-/* Body Styles */
-body {
+/* 
+Body Styles*/ 
+ body {
     background-color: #f8f9fa;
     font-family: 'Inter', sans-serif;
-    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-y: auto; 
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; 
+
+ }
+ .container-second-section{
+    margin: 100px;
+    
+ }
+ .class-container-margin{
+    margin: auto;
+    
+ }
+         /* Hover dropdown menu styles */
+.navbar .dropdown:hover .dropdown-menu {
+            display: block;
+    }
+.dropdown-menu {
+     margin-top: 0; /* Ensure no gap between the navbar and the dropdown */
+        }
+
+
+
+header {
+    
+    
+    padding: 30px 0; 
+}
+.content-background-image{
+    background-image: url('https://netlify.apollo.io/_next/static/media/bottom-cta-bg.f7464d41.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+   
+    
 }
 
-/* Header and Navigation */
-header {
-    background-color: #fdf2e9;
-    height: 80vh;
+
+.navbar-sticky {
+    position: fixed;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-sticky .container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.navbar-sticky + .content {
+    padding-top: 80px; 
+}
+
+
+.containerfluid-color-correction {
+    background-color: rgb(220, 232, 252); 
+    
+    
+}
+.control-width{
+    width:1350px;
+    margin: auto;
 }
 
 .hero-section {
-    padding: 50px 0;
-    text-align: center;
+    padding: 50px 0; 
+    text-align: center; 
 }
 
-nav {
-    position: sticky;
-    top: 0px;
-}
-
-.ani-icon {
+.ani-icon, .nav-icon {
     display: flex;
-    align-items: center;
-    font-size: small;
-}
-
-.nav-icon {
-    display: flex;
-    align-items: center;
-    font-size: small;
+    align-items: center; 
+    font-size: small; 
 }
 
 .card-custom {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
 }
 
 .card-body-custom {
-    flex-grow: 1;
+    flex-grow: 1; 
 }
 
 .logo-bar {
-    text-align: center;
-    font-weight: bold;
+    text-align: center; 
+    font-weight: bold; 
 }
 
+
 .animation-1 {
-    animation: moveLeftToRight 2s infinite;
+    animation: moveLeftToRight 2s infinite; 
 }
 
 .animation-2 {
-    animation: moveRightToLeft 2s infinite;
+    animation: moveRightToLeft 2s infinite; 
 }
 
 .animation-3 {
-    animation: moveRightToLeft 2s infinite;
+    animation: moveRightToLeft 2s infinite; 
 }
 
 .animation-4 {
-    animation: moveLeftToRight 2s infinite;
+    animation: moveLeftToRight 2s infinite; 
 }
 
 @keyframes moveLeftToRight {
     0% {
-        transform: translateX(0);
+        transform: translateX(0); 
     }
     50% {
         transform: translateX(10px);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(0); 
     }
 }
 
 @keyframes moveRightToLeft {
     0% {
-        transform: translateX(0);
+        transform: translateX(0); 
     }
     50% {
-        transform: translateX(-10px);
+        transform: translateX(-10px); 
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(0); 
     }
 }
+
+
 
 /* General Box Styles */
 .apollo-section {
@@ -142,7 +198,7 @@ nav {
 
 /* Container Styles */
 .container1 {
-    max-width: 1340px;
+    max-width: 1350px;
     margin: auto;
 }
 
@@ -291,10 +347,9 @@ nav {
     background-image: url('https://netlify.apollo.io/_next/static/media/bottom-cta-bg.f7464d41.svg');
     background-size: cover; 
     background-repeat: no-repeat;
-    /* margin-bottom: 50px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 100px;
+
+    
 }
 .sign-handle{
     display: flex;
@@ -543,15 +598,7 @@ body {
   .container-fluid {
     margin: 0 100px;
   }
-  .sidebar-sticky {
-    position: relative;
-    top: 0;
-    /* height: calc(100vh - 48px); */
-    padding-top: 0.5rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  
+
   .nav-link {
     font-weight: 500;
     color: #333;
@@ -593,9 +640,7 @@ body {
     font-size: 1rem;
   }
   
-  .main-content {
-    /* margin-left: 16.66667%; */
-  }
+
   
   .header {
     padding: 20px 0;
@@ -631,5 +676,5 @@ body {
     justify-content: space-between;
     font-size: 18px;
     width: 100%;
-    /* background-color: #cbdae9; */
+   
   }
