@@ -6,15 +6,18 @@ body {
     background-color: #f8f9fa;
     font-family: 'Inter', sans-serif;
     overflow-y: auto; /* Allows vertical scrolling */
-    margin: 0;
-    padding: 0;
     overflow-x: hidden; /* Prevents horizontal scrolling */
+    
 }
 
 /* Header and Navigation */
 header {
     background-color: #fdf2e9;
-    height: 80vh;
+    background-image: url(https://netlify.apollo.io/_next/static/media/bg.20d8f1eb.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .hero-section {
