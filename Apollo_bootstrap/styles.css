@@ -1356,16 +1356,69 @@ body {
   
   .content-area {
     height: 600px;
-    width: 100%;
+    /* width: 100%; */
     background-color: #007bff;
-    /* background-image: url("https://netlify.apollo.io/_next/image?url=https%3A%2F%2Fnetlify.apollo.io%2F_next%2Fstatic%2Fmedia%2Fcontact-account-search.79b0a060.png&w=2048&q=75"); */
-    /* margin-top: 20px; */
-    /* border-radius: 5px; */
+ 
+    
+    
   }
   .content-area > img {
     height: 600px;
+    width: auto;
+    
   }
-  .input-group-prepend {
+
+  @media (min-width:768px) and (max-width:1288px) {
+    .content-area {
+        height: 500px;
+        width: auto;
+        margin-bottom: 10px;
+        
+        }
+        .content-area > img {
+            height: 500px;
+            width: 650px;
+            position: absolute;
+            left: 0;
+            box-sizing: border-box;
+      }
+
+  
+}
+  
+ 
+  @media (max-width: 768px) {
+    .content-area {
+        height: 300px;
+        width: auto;
+        margin-bottom: 10px;
+        
+        }
+        .content-area > img {
+            height: 300px;
+            width: auto;
+            position: absolute;
+            left: 0;
+            box-sizing: border-box;
+      }
+
+  
+}
+@media (max-width: 500px) {
+    .content-area {
+        height: 200px;
+        width: auto;
+        margin-bottom: 10px;
+        
+        }
+        .content-area > img {
+            height: 200px;
+            width: auto;
+            
+             }
+
+            }
+input-group-prepend {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
