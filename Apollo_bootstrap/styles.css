@@ -349,6 +349,87 @@ header {
 
 /*-----------------------------End of Nikita CSS Styles ----------------------------- */
 
+.container {
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.features {
+    list-style: none;
+    padding-left: 0;
+}
+.features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+.features li::before {
+    content: "✔️";
+    margin-right: 0.7rem;
+}
+.features li .feature-text {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.learn-more-btn {
+    background-color: black;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+.learn-more-btn .arrow {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+.image-container {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2 {
+    font-weight: 700;
+}
+.custom-para, .features ul {
+    font-size: 17px;
+}
+.custom-button-color {
+    border: 1px solid gray;
+}
+.custom-button-color:hover {
+    background-color: rgb(255, 193, 8);
+}
+.bold-title {
+    font-weight: bold;
+}
+.custom-button-size {
+    max-width: 900px;
+    width: 100%;
+   
+    
+}
+@media (min-width: 768px) {
+    .button-group-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .button-group-container .btn {
+        margin: 0.5rem;
+    }
+}
+
 .web_footer {
     background-color: white;
     padding: 20px 0;
@@ -683,6 +764,13 @@ body {
     justify-content: space-between;
     font-size: 18px;
     width: 100%;
+
+
+
+    
+   /* this is copy */
+
+
    
   }
 /* Importing fonts */
