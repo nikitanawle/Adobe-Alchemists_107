@@ -1513,3 +1513,133 @@ input-group-prepend {
     width: 100%;
    
   }
+
+  .top-container {
+    background-color: #f5f5dc;
+    padding: 0 10vw;
+    background-image: url(https://netlify.apollo.io/_next/static/media/bg.54678e5c.svg);
+  }
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 70px 30px 0;
+  }
+  .image-container > img {
+    height: 40vw;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .learn-more-btn1 {
+    background-color: #1bdd5d;
+  
+    color: rgb(28, 26, 26);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #00cb00;
+  }
+  body {
+    /* background-color: #007bff; */
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .card .card-text {
+    font-size: 1rem;
+  }
+  /* .big-image {
+    display: none;
+  } */
+  .small-image {
+    display: none;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  .image-container {
+    /* height: 80vh;
+    background-image: url("https://netlify.apollo.io/_next/image?url=https%3A%2F%2Fnetlify.apollo.io%2F_next%2Fstatic%2Fmedia%2Fpowered-by-desktop-image.9d2e1874.png&w=3840&q=75"); */
+  }
+  
+  .icon img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  @media (max-width: 1024px) {
+    .top-container {
+      padding: 0 3vw;
+    }
+    .hero-section {
+      padding: 30px 5px 0;
+    }
+    .image-container > img {
+      height: 44vw;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      width: 100%;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 600;
+      width: 100%;
+    }
+    .learn-more-btn {
+      font-size: 0.8rem;
+    }
+    .big-image {
+      display: none;
+    }
+    .small-image {
+      display: block;
+    }
+    .image-container > img {
+      height: 110vh;
+    }
+  }
+  
