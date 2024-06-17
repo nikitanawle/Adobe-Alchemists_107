@@ -148,4 +148,131 @@ h2 {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.itinerary {
+  margin-left: 15px;
+}
+.itinerary h2 {
+  color: #1a1a1a;
+}
+.itinerary .timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+.itinerary .timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #FF5722;
+  top: 0;
+  left: 20px;
+}
+.itinerary .timeline .timeline-item {
+  margin: 20px 0;
+  position: relative;
+}
+.itinerary .timeline .timeline-item .event {
+  display: flex;
+  align-items: center;
+}
+.itinerary .timeline .timeline-item .event .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF5722;
+  border: 2px solid white;
+  position: absolute;
+  left: 11px;
+  z-index: 1;
+}
+.itinerary .timeline .timeline-item .event .content {
+  padding-left: 40px;
+}
+.itinerary .timeline .timeline-item .event .content h3 {
+  margin: 0;
+  color: #1E1E1E;
+}
+.itinerary .timeline .timeline-item:first-child .circle,
+.itinerary .timeline .timeline-item:last-child .circle {
+  background-color: #FF5722;
+}
+
+.map {
+  width: 850px;
+  margin-left: 15px;
+}
+.map h2 {
+  color: #1a1a1a;
+}
+.map .map-container {
+  width: 100%;
+  height: 400px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  align-content: flex-start;
+  background-image: url(./asset/map.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.map .map-error {
+  width: 375px;
+  height: 148.13px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.map .map-error strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.map .map-error .ok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map .map-error .ok button {
+  color: blue;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .itinerary,
+  .map {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline-item .event .circle {
+    left: 1px;
+  }
+  .timeline-item .event .content {
+    padding-left: 30px;
+  }
+  .timeline-item .event .content h3 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .map-container {
+    height: 300px;
+  }
+  .map-error {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
