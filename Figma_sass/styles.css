@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 body {
   font-family: Inter;
   background-color: #fff;
@@ -275,4 +276,218 @@ h2 {
   .map-error {
     width: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+}
+header .header-content {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+header .header-content .logo {
+  display: flex;
+  gap: 20px;
+}
+header .header-content .logo img {
+  max-height: 50px;
+}
+header .header-content .search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 350px;
+}
+header .header-content .search-bar input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+header .header-content .second ul {
+  list-style: none;
+  margin-left: 120px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+header .header-content .second ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header .header-content .second ul li a.login-btn {
+  color: #fff;
+  background-color: #EB662B;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+}
+.container .breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container .breadcrumb a {
+  text-decoration: none;
+}
+.container .badges {
+  margin: 40px 0;
+}
+.container .badges span {
+  color: #EB662B;
+  background-color: #fdede5;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .badges span:nth-of-type(2) {
+  color: black;
+  background: #F5F5F5;
+}
+.container .details {
+  margin: 10px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .details .list ul {
+  display: flex;
+  gap: 30px;
+  margin-right: -80px;
+}
+.container .details .list ul li {
+  list-style: none;
+  padding-left: 50px;
+  cursor: pointer;
+}
+.container .details div span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.container .image-gallery {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.container .image-gallery .medium-image {
+  width: 510px;
+}
+.container .image-gallery .small-images {
+  display: flex;
+  gap: 11px;
+  position: relative;
+}
+.container .image-gallery .small-images img {
+  width: 250px;
+  height: auto;
+}
+.container .image-gallery .small-images a {
+  position: absolute;
+  color: white;
+  background: #05073C;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  right: 10px;
+  bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+  .search-bar {
+    flex-basis: 100%;
+    margin-bottom: 210px;
+  }
+  .breadcrumb {
+    flex-direction: column;
+    margin: 100px;
+  }
+  .image-gallery {
+    flex-direction: column;
+  }
+  .image-gallery .medium-image,
+  .image-gallery .small-images {
+    width: 100%;
+    max-width: 510px;
+  }
+}
+.footer-Main {
+  background-image: url("asset/bg.svg fill.jpg");
+  width: 100%;
+  min-height: 556px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-Main .footer-section {
+  width: 1320px;
+  height: 656px;
+  margin: auto;
+}
+.footer-Main .footer-section .upper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1290px;
+  height: 186px;
+  border-bottom: 2px solid orange;
+  margin: auto;
+}
+.footer-Main .footer-section .bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 1290px;
+  height: 390px;
+  margin: auto;
+}
+.footer-Main .footer-section ul {
+  list-style: none;
+  padding: 10px;
+  line-height: 28px;
+  padding: 30px;
+}
+.footer-Main .footer-section .ul-heading {
+  font-size: 20px;
+  line-height: 30px;
+}
+.footer-Main .footer-section ul li {
+  cursor: pointer;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+  width: 1320px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.copyright {
+  margin-left: 150px;
+}
+
+/*# sourceMappingURL=styles.css.map */

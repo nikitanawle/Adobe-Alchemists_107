@@ -338,3 +338,275 @@ $text-color: #1E1E1E;
   }
 }
 //<!------------------------------------------------- end of hiren's Code ------------------------------------------------->
+
+// Variables
+$primary-color: #EB662B;
+$secondary-color: #05073C;
+$background-color: #fff;
+$footer-background: url("asset/bg.svg\ fill.jpg");
+$max-width: 1320px;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: $background-color;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+
+    .header-content {
+        width: 100%;
+        max-width: $max-width;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        .logo {
+            display: flex;
+            gap: 20px;
+
+            img {
+                max-height: 50px;
+            }
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+            max-width: 350px;
+
+            input {
+                width: 100%;
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+
+        .second {
+            ul {
+                list-style: none;
+                margin-left: 120px;
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #000;
+
+                        &.login-btn {
+                            color: #fff;
+                            background-color: $primary-color;
+                            padding: 12px;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.container {
+    width: 100%;
+    max-width: $max-width;
+    margin: auto;
+
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px;
+        
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .badges {
+        margin: 40px 0;
+
+        span {
+            color: $primary-color;
+            background-color: lighten($primary-color, 40%);
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &:nth-of-type(2) {
+                color: black;
+                background: #F5F5F5;
+            }
+        }
+    }
+
+    .details {
+        margin: 10px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .list {
+            ul {
+                display: flex;
+                gap: 30px;
+                margin-right: -80px;
+
+                li {
+                    list-style: none;
+                    padding-left: 50px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        div {
+            span {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .image-gallery {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+
+        .medium-image {
+            width: 510px;
+        }
+
+        .small-images {
+            display: flex;
+            gap: 11px;
+            position: relative;
+
+            img {
+                width: 250px;
+                height: auto;
+            }
+
+            a {
+                position: absolute;
+                color: white;
+                background: $secondary-color;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 20px;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        flex-basis: 100%;
+        margin-bottom: 210px;
+    }
+
+    .breadcrumb {
+        flex-direction: column;
+        margin: 100px;
+       
+    }
+
+    .image-gallery {
+        flex-direction: column;
+
+        .medium-image,
+        .small-images {
+            width: 100%;
+            max-width: 510px;
+        }
+    }
+}
+
+
+.footer-Main {
+    background-image: $footer-background;
+    width: 100%;
+    min-height: 556px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+    .footer-section {
+        width: $max-width;
+        height: 656px;
+        margin: auto;
+
+        .upper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 1290px;
+            height: 186px;
+            border-bottom: 2px solid orange;
+            margin: auto;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            width: 1290px;
+            height: 390px;
+            margin: auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px;
+            line-height: 28px;
+            padding: 30px;
+           
+            
+        }
+
+        .ul-heading {
+            font-size: 20px;
+            line-height: 30px;
+            
+        }
+        ul li{
+          cursor: pointer;
+        }
+    }
+  }
+
+.extra {
+        display: flex;
+        justify-content: space-between;
+        width: $max-width;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .copyright {
+        margin-left: 150px;
+    }
+
