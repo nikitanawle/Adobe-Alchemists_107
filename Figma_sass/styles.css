@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  font-family: Inter;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  max-width: 1920px;
+  max-height: 8445.69px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+.calendar .calendar-content {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: start;
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+  /* Navigation */
+}
+.calendar .calendar-content .month:nth-of-type(1) {
+  display: block;
+}
+.calendar .calendar-content .month .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 10px;
+}
+.calendar .calendar-content .month .calendar-header .prev, .calendar .calendar-content .month .calendar-header .next {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #ff6600;
+}
+.calendar .calendar-content .month .calendar-header .month-year {
+  font-size: 1.2em;
+}
+.calendar .calendar-content .month .calendar-weekdays {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.calendar .calendar-content .month .calendar-weekdays span {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #ff6600;
+}
+.calendar .calendar-content .month .calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar .calendar-content .month .calendar-days span {
+  flex: 1 0 14.28%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 2px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+.calendar .calendar-content .month .calendar-days span.highlight {
+  background-color: #ffd700;
+  color: #fff;
+}
+.calendar .calendar-content .month .calendar-days span:hover {
+  background-color: #ff6600;
+  color: #fff;
+  cursor: pointer;
+}
+.calendar .calendar-content:hover {
+  transform: scale(1.05);
+}
+.calendar .calendar-content input[type=radio] {
+  display: none;
+}
+.calendar .calendar-content input[type=radio]:nth-of-type(1):checked ~ .month-navigation + #jan, .calendar .calendar-content input[type=radio]:nth-of-type(2):checked ~ .month-navigation + #feb {
+  display: block;
+}
+.calendar .calendar-content .month-navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+}
+.calendar .calendar-content .month-navigation label {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #ff6600;
+  padding: 0 10px;
+}
+.calendar .calendar-content .month-navigation label:hover {
+  color: #cc5200;
+}
+
+.faq {
+  margin-top: 40px;
+}
+.faq .faq-item {
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.faq .faq-item .faq-question {
+  display: block;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+.faq .faq-item .faq-question:hover {
+  background-color: white;
+}
+.faq .faq-item .faq-question::after {
+  content: "+";
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+.faq .faq-item input[type=radio] {
+  display: none;
+}
+.faq .faq-item input[type=radio]:checked + .faq-question::after {
+  transform: rotate(45deg);
+}
+.faq .faq-item input[type=radio]:checked ~ .faq-answer {
+  max-height: 1000px;
+  padding: 15px;
+}
+.faq .faq-item .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.itinerary {
+  margin-left: 15px;
+}
+.itinerary h2 {
+  color: #1a1a1a;
+}
+.itinerary .timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+.itinerary .timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #FF5722;
+  top: 0;
+  left: 20px;
+}
+.itinerary .timeline .timeline-item {
+  margin: 20px 0;
+  position: relative;
+}
+.itinerary .timeline .timeline-item .event {
+  display: flex;
+  align-items: center;
+}
+.itinerary .timeline .timeline-item .event .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF5722;
+  border: 2px solid white;
+  position: absolute;
+  left: 11px;
+  z-index: 1;
+}
+.itinerary .timeline .timeline-item .event .content {
+  padding-left: 40px;
+}
+.itinerary .timeline .timeline-item .event .content h3 {
+  margin: 0;
+  color: #1E1E1E;
+}
+.itinerary .timeline .timeline-item:first-child .circle,
+.itinerary .timeline .timeline-item:last-child .circle {
+  background-color: #FF5722;
+}
+
+.map {
+  width: 850px;
+  margin-left: 15px;
+}
+.map h2 {
+  color: #1a1a1a;
+}
+.map .map-container {
+  width: 100%;
+  height: 400px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  align-content: flex-start;
+  background-image: url(./asset/map.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.map .map-error {
+  width: 375px;
+  height: 148.13px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.map .map-error strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.map .map-error .ok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map .map-error .ok button {
+  color: blue;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .itinerary,
+  .map {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline-item .event .circle {
+    left: 1px;
+  }
+  .timeline-item .event .content {
+    padding-left: 30px;
+  }
+  .timeline-item .event .content h3 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .map-container {
+    height: 300px;
+  }
+  .map-error {
+    width: 100%;
+  }
+}
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+}
+header .header-content {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+header .header-content .logo {
+  display: flex;
+  gap: 20px;
+}
+header .header-content .logo img {
+  max-height: 50px;
+}
+header .header-content .search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 350px;
+}
+header .header-content .search-bar input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+header .header-content .second ul {
+  list-style: none;
+  margin-left: 120px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+header .header-content .second ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header .header-content .second ul li a.login-btn {
+  color: #fff;
+  background-color: #EB662B;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+}
+.container .breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container .breadcrumb a {
+  text-decoration: none;
+}
+.container .badges {
+  margin: 40px 0;
+}
+.container .badges span {
+  color: #EB662B;
+  background-color: #fdede5;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .badges span:nth-of-type(2) {
+  color: black;
+  background: #F5F5F5;
+}
+.container .details {
+  margin: 10px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .details .list ul {
+  display: flex;
+  gap: 30px;
+  margin-right: -80px;
+}
+.container .details .list ul li {
+  list-style: none;
+  padding-left: 50px;
+  cursor: pointer;
+}
+.container .details div span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.container .image-gallery {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.container .image-gallery .medium-image {
+  width: 510px;
+}
+.container .image-gallery .small-images {
+  display: flex;
+  gap: 11px;
+  position: relative;
+}
+.container .image-gallery .small-images img {
+  width: 250px;
+  height: auto;
+}
+.container .image-gallery .small-images a {
+  position: absolute;
+  color: white;
+  background: #05073C;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  right: 10px;
+  bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+  .search-bar {
+    flex-basis: 100%;
+    margin-bottom: 210px;
+  }
+  .breadcrumb {
+    flex-direction: column;
+    margin: 100px;
+  }
+  .image-gallery {
+    flex-direction: column;
+  }
+  .image-gallery .medium-image,
+  .image-gallery .small-images {
+    width: 100%;
+    max-width: 510px;
+  }
+}
+.footer-Main {
+  background-image: url("asset/bg.svg fill.jpg");
+  width: 100%;
+  min-height: 556px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-Main .footer-section {
+  width: 1320px;
+  height: 656px;
+  margin: auto;
+}
+.footer-Main .footer-section .upper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1290px;
+  height: 186px;
+  border-bottom: 2px solid orange;
+  margin: auto;
+}
+.footer-Main .footer-section .bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 1290px;
+  height: 390px;
+  margin: auto;
+}
+.footer-Main .footer-section ul {
+  list-style: none;
+  padding: 10px;
+  line-height: 28px;
+  padding: 30px;
+}
+.footer-Main .footer-section .ul-heading {
+  font-size: 20px;
+  line-height: 30px;
+}
+.footer-Main .footer-section ul li {
+  cursor: pointer;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+  width: 1320px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.copyright {
+  margin-left: 150px;
+}
+
+/*# sourceMappingURL=styles.css.map */
