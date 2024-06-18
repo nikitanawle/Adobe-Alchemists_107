@@ -4,12 +4,12 @@ Apollo.io is a comprehensive sales engagement and lead generation platform desig
 
 ### Deployed Link
 
-[Live Demo: CASIO](https://ubiquitous-caramel-ba07c4.netlify.app/)
+[Live Demo: Apollo](https://ubiquitous-caramel-ba07c4.netlify.app/)
 
 [Live Demo: Viatours](https://joyful-basbousa-a3c359.netlify.app/)
 
 ### Video Presentation
-![Apollo](https://youtu.be/I1A7Tqe2qwY )
+![Presentation Apollo](https://youtu.be/I1A7Tqe2qwY )
 
 
 ## Features
