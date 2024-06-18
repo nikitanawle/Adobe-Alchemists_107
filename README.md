@@ -9,7 +9,7 @@ Apollo.io is a comprehensive sales engagement and lead generation platform desig
 [Live Demo: Viatours](https://joyful-basbousa-a3c359.netlify.app/)
 
 ### Video Presentation
-![CASIO](https://youtu.be/I1A7Tqe2qwY )
+![Apollo](https://youtu.be/I1A7Tqe2qwY )
 
 
 ## Features
@@ -55,7 +55,7 @@ To run this project locally:
    
 ## Contributors
 - [Nikita](https://github.com/nikitanawle)
-- [Hiren Ribadiya]https://github.com/hirenribadiya)
+- [Hiren Ribadiya](https://github.com/hirenribadiya)
 - [Mrigendra](https://github.com/mrigendra-18)
 - [Pratibha Shukla](https://github.com/PratibhaShukla)
 
